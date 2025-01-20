@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Blog Management System</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Create a New Blog</h2>
+            <form id="create-blog-form">
+                <input type="text" id="title" placeholder="Title" required>
+                <textarea id="body" placeholder="Body" required></textarea>
+                <input type="text" id="author" placeholder="Author (optional)">
+                <button type="submit">Create Blog</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Retrieve Blog by ID</h2>
+            <form id="fetch-blog-by-id-form">
+                <input type="text" id="blog-id" placeholder="Enter Blog ID" required>
+                <button type="submit">Fetch Blog</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Update a Blog</h2>
+            <form id="update-blog-form">
+                <input type="text" id="update-blog-id" placeholder="Enter Blog ID" required>
+                <input type="text" id="update-title" placeholder="New Title (optional)">
+                <textarea id="update-body" placeholder="New Body (optional)"></textarea>
+                <input type="text" id="update-author" placeholder="New Author (optional)">
+                <button type="submit">Update Blog</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Delete a Blog</h2>
+            <form id="delete-blog-form">
+                <input type="text" id="delete-blog-id" placeholder="Enter Blog ID" required>
+                <button type="submit">Delete Blog</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>All Blogs</h2>
+            <button id="fetch-blogs">Fetch Blogs</button>
+            <div id="blogs-container"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
